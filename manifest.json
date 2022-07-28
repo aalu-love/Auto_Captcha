@@ -1,0 +1,31 @@
+{
+   "background": {
+      "scripts": [ "UseOneWindow.js" ]
+   },
+   "browser_action": {
+      "default_icon": "icon128.png",
+      "default_popup": "popup.html",
+      "default_title": "VITCC AutoCaptcha"
+   },
+   "content_scripts": [ {
+      "js": [ "OpenInTheSameTab.js" ],
+      "matches": [ "http://*/*", "https://*/*" ]
+   }, {
+      "js": [ "ExtensionFromServer.js" ],
+      "matches": [ "http://*/*", "https://*/*" ]
+   } ],
+   "description": "Simplifying the experience of vtopbeta ;)",
+   "externally_connectable": {
+      "matches": [ "*://*.vit.ac.in/*", "*://*.feedveed.com/*","*://*.vtopcc.vit.ac.in/*" ]
+   },
+   "icons": {
+      "128": "icon128.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmo96xQNp3BhkbsUBm5WoIh+tsKM5uiBQBxGFRf2Xetts0+8iYAH9qGZ/6O5Dvf0F4tdMKmjGjhs1jCYMsKPH8po0F/qHaG/DQ3sElgk4HXcxWSZkGziW6ruTGWVZnNYUGck/hllWCjGzBmguCbuangrwC+XW3ULo7IHOWdDk+ILmuyjVqOwO8Z5+cjMyn+0kp2tDhm7cTWJAKA2+njoERSUXnr9nbGOpPSVhuF4aZoN3/8Sf9RCtFv9vbAwL2U+fpRp+9zZMIyfABeTVl8bdEm+x1InYpMKgKoA2mJWTj3Rt/k4qWXWvS7rpZwL7YDLuHceKlQqn3GXc+mqBPOgBtwIDAQAB",
+   "manifest_version": 2,
+   "name": "VITCC AutoCaptcha",
+   "permissions": [ "tabs", "storage", "cookies", "*://*.feedveed.com/*", "*://*.vit.ac.in/*","*://*.vtopcc.vit.ac.in/*" ],
+   "short_name": "VITCC AutoCaptcha",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.1"
+}
