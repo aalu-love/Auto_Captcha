@@ -3,7 +3,7 @@ Auto Captcha for VITCC
 This application will do all Captcha for all VITCC sites.
 ## How to use:
 Step 1 : Clone or download the repo.<br>
-<img src="images/1.png" alt="no_image" width="70%"><br><br>
+<img src="images/1.png" alt="no_image" width="80%"><br><br>
 Step 2 : Extract the zip to your desktop.<br>
 <img src="images/2.png" alt="no_image"><br><br>
 Step 3: Go the Chorme and open the Chrome Extension.<br>
